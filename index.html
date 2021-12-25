@@ -15,8 +15,14 @@
     <div class="container">
         <div class="weather-app-wrapper">
         <div class="weather-app">
+            <form id="search-form">
+                <div class="row">
+                <input type="search" placeholder="Take me away✈️...."  class="form-control"/>
+                <input type="submit" value="search" />
+                </div>
+            </form>
 <div class="overview">
-    <h1 id="city"></h1>
+<h1 id="city"></h1>
     <ul>
         <li>Last updated <span id="date"></span> </li>
         <li id="description">
@@ -30,6 +36,7 @@
             <img 
             src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
             alt="Partly Cloudy"
+            id="icon"
             class="float-left"
             />
             <div class="float-left">
