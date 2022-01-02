@@ -41,7 +41,7 @@ if (index < 5) {
         alt="" 
         width="42"
          />
-         <div class="weather-forecast-temperature">$
+         <div class="weather-forecast-temperature">
         <span class="weather-forecast-temperature-max">
         ${Math.round(
             forecastDay.temp.max
@@ -127,9 +127,10 @@ function displayFahrenheitTemperature(event) {
 
 function displayCelsiusTemperature(event) {
     event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+
     celsiusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
-    let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
