@@ -45,7 +45,8 @@ if (index < 5) {
         <span class="weather-forecast-temperature-max">
         ${Math.round(
             forecastDay.temp.max
-            )}° </span> 
+            )}° </span>  
+            |
             <span 
             class="weather-forecast-temperature-min">
             ${Math.round(
